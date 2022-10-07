@@ -1,11 +1,14 @@
 def naming(name: str) -> str:
     res = ''
     for sign in name:
-        if not (sign.isdigit() or sign.isalpha()):
+        if sign == '.':
+            pass
+        elif not (sign.isdigit() or sign.isalpha()):
             res += '_'
         else:
             res += sign
     return res.lower()
 
 
-print(naming('4. Median of Two Sorted Arrays'))
+if __name__ == '__main__':
+    print(naming('4. Median of Two Sorted Arrays'))
