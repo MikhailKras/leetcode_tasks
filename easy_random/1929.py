@@ -1,4 +1,4 @@
-ass Solution(object):
-        defConcatenation(self, nums: List) -> List:
-                return nums * 2
-            
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        return nums * 2
+               
